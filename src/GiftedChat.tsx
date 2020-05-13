@@ -437,7 +437,7 @@ class GiftedChat<TMessage extends IMessage = IMessage> extends React.Component<
   }
 
   componentDidUpdate(prevProps: GiftedChatProps<TMessage> = {}) {
-    const { messages, text, inverted } = this.props
+    const { messages, text, inverted, disableAutoScroll } = this.props
 
     if (this.props !== prevProps) {
       this.setMessages(messages || [])
@@ -447,7 +447,8 @@ class GiftedChat<TMessage extends IMessage = IMessage> extends React.Component<
       inverted === false &&
       messages &&
       prevProps.messages &&
-      messages.length !== prevProps.messages.length
+      messages.length !== prevProps.messages.length &&
+      !disableAutoScroll
     ) {
       setTimeout(() => this.scrollToBottom(false), 200)
     }
