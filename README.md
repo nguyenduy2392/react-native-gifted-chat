@@ -1,6 +1,7 @@
-<h3 align="center">
-   Chỉnh sửa dành riêng cho app muốn bỏ chế độ tự động cuộn khi có tin nhắn mới trong trường hợp danh sách ngược (inverted === false)
+<h3>
+  Update at this fork. fork from v0.16.0
 </h3>
+* **`disableAutoScroll`** _(Bool)_ - disable auto scroll when have new messages. Default false. Working only set (inverted = false)
 <p align="center" >
 <p align="center" >
    <a href="https://reactnative.gallery/FaridSafi/gifted-chat">
@@ -380,6 +381,7 @@ interface QuickReplies {
 * **`renderQuickReplySend`** _(Function)_ - Custom quick reply **send** view
 * **`shouldUpdateMessage`** _(Function)_ - Lets the message component know when to update outside of normal cases.
 * **`infiniteScroll`** _(Bool)_ - infinite scroll up when reach the top of messages container, automatically call onLoadEarlier function if exist (not yet supported for the web)
+* **`disableAutoScroll`** _(Bool)_ - disable auto scroll when have new messages. Default false. Working only set (inverted = false)
 
 ## Imperative methods
 
