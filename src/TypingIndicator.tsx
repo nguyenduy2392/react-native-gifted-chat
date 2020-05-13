@@ -76,6 +76,7 @@ const TypingIndicator = (props: Props) => {
           width: 45,
           borderRadius: 15,
           backgroundColor: '#f0f0f0',
+          overflow: 'hidden'
         },
       ]}
     >
