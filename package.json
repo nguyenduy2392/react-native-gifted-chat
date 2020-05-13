@@ -2,7 +2,7 @@
   "name": "react-native-gifted-chat",
   "version": "0.16.0",
   "description": "The most complete chat UI for React Native",
-  "main": "node_modules/expo/AppEntry.js",
+  "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
@@ -118,5 +118,6 @@
     "hooks": {
       "pre-commit": "yarn lint && yarn tsc"
     }
-  }
+  },
+  "postinstall": "cd node_modules/react-native-gifted-chat && yarn install && yarn lint && yarn build && yarn config:npm && rm -rf node_modules"
 }
