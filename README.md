@@ -1,3 +1,6 @@
+<h3 align="center">
+   Chỉnh sửa dành riêng cho app muốn bỏ chế độ tự động cuộn khi có tin nhắn mới trong trường hợp danh sách ngược (inverted === false)
+</h3>
 <p align="center" >
 <p align="center" >
    <a href="https://reactnative.gallery/FaridSafi/gifted-chat">
